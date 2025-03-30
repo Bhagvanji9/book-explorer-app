@@ -1,0 +1,10 @@
+@import "tailwindcss";
+
+@tailwind utilities;
+
+* {
+  box-sizing: border-box;
+  font-family: "Gidole", sans-serif;
+
+  font-style: normal;
+}
