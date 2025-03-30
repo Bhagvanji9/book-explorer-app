@@ -57,16 +57,6 @@ yarn install  # or npm install
 yarn dev  # or npm run dev
 ```
 
-## 🔗 API Configuration
-
-To fetch books from the **Google Books API**, you may need an API key:
-
-1. Get a free API key from [Google Books API](https://developers.google.com/books/).
-2. Create a `.env` file in the root directory:
-   ```sh
-   VITE_GOOGLE_BOOKS_API_KEY=your_api_key_here
-   ```
-
 ## 📌 Available Routes
 
 | Route        | Description            |
