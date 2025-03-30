@@ -1,12 +1,90 @@
-# React + Vite
+# 📚 Book Explorer
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Book Explorer is a **React (Vite) application** that allows users to search for books using the **Google Books API**, view details, and manage a favorites list.
 
-Currently, two official plugins are available:
+## ✨ Features
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- ✅ **Search Books**: Search by title, author, or genre.
+- ✅ **Book Details Page**: View book descriptions, authors, and other details.
+- ✅ **Favorites Management**: Add/remove books from favorites (stored in global state).
+- ✅ **Dark Mode Support**: Toggle between light and dark themes.
+- ✅ **Responsive UI**: Fully mobile-friendly design using MUI and Tailwind CSS.
+- ✅ **React Router Navigation**: Navigate between search, details, and favorites pages.
 
-## Expanding the ESLint configuration
+## 🛠️ Technologies Used
 
-If you are developing a production application, we recommend using TypeScript and enable type-aware lint rules. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+- **React (Vite)** - Frontend framework
+- **Redux Toolkit** - State management
+- **React Hook Form + Yup** - Form handling and validation
+- **Axios** - API requests
+- **Google Books API** - Fetch book data
+- **Material UI (MUI) & Tailwind CSS** - Styling and UI components
+
+## 📂 Folder Structure
+
+```
+📦 book-explorer
+├── 📁 src
+│   ├── 📁 components     # Reusable UI components
+│   ├── 📁 pages          # Main application pages
+│   ├── 📁 store         # Redux state management
+│   ├── 📁 hooks         # Custom React hooks
+│   ├── 📁 assets        # Static images and icons
+│   ├── 📄 App.jsx       # Main application entry
+│   ├── 📄 index.js      # Renders the app
+│   └── 📄 styles.css    # Global styles
+└── 📄 README.md
+```
+
+## 🚀 Installation & Setup
+
+### 1️⃣ Clone the Repository
+
+```sh
+git clone https://github.com/your-username/book-explorer.git
+cd book-explorer
+```
+
+### 2️⃣ Install Dependencies
+
+```sh
+yarn install  # or npm install
+```
+
+### 3️⃣ Start the Development Server
+
+```sh
+yarn dev  # or npm run dev
+```
+
+## 🔗 API Configuration
+
+To fetch books from the **Google Books API**, you may need an API key:
+
+1. Get a free API key from [Google Books API](https://developers.google.com/books/).
+2. Create a `.env` file in the root directory:
+   ```sh
+   VITE_GOOGLE_BOOKS_API_KEY=your_api_key_here
+   ```
+
+## 📌 Available Routes
+
+| Route        | Description            |
+| ------------ | ---------------------- |
+| `/`          | Home/Search Page       |
+| `/book/:id`  | Book Details Page      |
+| `/favorites` | List of Favorite Books |
+
+## 👨‍💻 Contribution
+
+We welcome contributions! To contribute:
+
+1. Fork the repository.
+2. Create a new feature branch: `git checkout -b feature-name`
+3. Commit your changes: `git commit -m 'Add new feature'`
+4. Push to the branch: `git push origin feature-name`
+5. Open a Pull Request 🎉
+
+## 📜 License
+
+This project is **open-source** under the **MIT License**
