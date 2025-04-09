@@ -26,6 +26,7 @@ export default function BookCard({ book }) {
         className="absolute top-0 right-2 z-50 bg-white/80 rounded-full"
       >
         <IconButton
+          data-testid="fav-toggel"
           onClick={() =>
             dispatch(isFavorite ? removeFavorite(book.id) : addFavorite(book))
           }

@@ -61,7 +61,10 @@ function BookDetails() {
   if (isLoading)
     return (
       <>
-        <Container className="flex p-4 gap-5">
+        <Container
+          data-testid="book-details-skeleton"
+          className="flex p-4 gap-5"
+        >
           <Skeleton
             variant="rectangular"
             width="30%"

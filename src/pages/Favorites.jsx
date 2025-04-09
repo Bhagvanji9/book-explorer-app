@@ -1,5 +1,4 @@
 import React from "react";
-import { useSelector, useDispatch } from "react-redux";
 import { removeFavorite } from "../store/favoritesSlice";
 import Button from "@mui/material/Button";
 import Card from "@mui/material/Card";
@@ -7,6 +6,7 @@ import CardContent from "@mui/material/CardContent";
 import CardMedia from "@mui/material/CardMedia";
 import Typography from "@mui/material/Typography";
 import { Grid } from "@mui/material";
+import { useDispatch, useSelector } from "../hooks/useRedux";
 
 function Favorites() {
   const favorites = useSelector((state) => state.favorites.favorites);

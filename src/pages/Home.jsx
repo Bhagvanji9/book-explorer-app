@@ -1,4 +1,4 @@
-import { useState } from "react";
+import React, { useState } from "react";
 import { searchBooks } from "../api/googleBooksApi";
 import SearchForm from "../components/SearchForm";
 import BookCard from "../components/BookCard";
@@ -58,6 +58,7 @@ function Home() {
                         height={400}
                         width="100%"
                         className="rounded-2xl"
+                        data-testid="book-skeleton"
                       />
                     </Grid>
                   )

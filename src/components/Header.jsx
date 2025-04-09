@@ -1,4 +1,4 @@
-import { useState } from "react";
+import React, { useState } from "react";
 import { Link, useLocation } from "react-router-dom";
 import {
   AppBar,
@@ -85,6 +85,7 @@ function Header({ toggleTheme, mode }) {
               { label: "Contact", icon: <Phone fontSize="small" />, link: "#" },
             ].map(({ label, icon, link }) => (
               <Typography
+                data-testid="nav-item"
                 key={label}
                 component={link.startsWith("/") ? Link : "a"}
                 to={link.startsWith("/") ? link : undefined}
@@ -111,7 +112,11 @@ function Header({ toggleTheme, mode }) {
             ))}
           </Box>
 
-          <IconButton onClick={toggleTheme} className="text-white">
+          <IconButton
+            onClick={toggleTheme}
+            data-testid="theme-btn"
+            className="text-white"
+          >
             {mode === "dark" ? <DarkMode /> : <LightMode />}
           </IconButton>
         </Toolbar>
@@ -149,6 +154,7 @@ function Header({ toggleTheme, mode }) {
               { label: "Contact", icon: <Phone fontSize="small" />, link: "#" },
             ].map(({ label, icon, link }) => (
               <ListItem
+                data-testid="drawer-menu"
                 key={label}
                 disablePadding
                 sx={{

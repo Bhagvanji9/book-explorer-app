@@ -75,6 +75,26 @@ We welcome contributions! To contribute:
 4. Push to the branch: `git push origin feature-name`
 5. Open a Pull Request 🎉
 
+## ✅ Running Tests
+
+Book Explorer uses **Jest** and **React Testing Library** for testing.
+
+### 🧪 Run all tests:
+
+```bash
+npm test   # or yarn test
+```
+
+### 🧪 Run tests in watch mode:
+
+```bash
+npm test -- --watch
+```
+
+> 📦 Tests are located in the `/__tests__` folder and alongside components using the `.jsx` naming convention.
+
+---
+
 ## 📜 License
 
 This project is **open-source** under the **MIT License**
